@@ -8,10 +8,57 @@
     <link rel="stylesheet" href="\Scripts\lib\jquery-mobile-bower\css\jquery.mobile-1.4.5.min.css">
 </head>
 <body>
-    <div id="home"></div>
+    <!-- Home Page Container -->
+    <div data-role="page" data-theme="a" id="home">     
+    <div data-role="header">
+        <h1> Header Content </h1>
+    </div>
+    <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+      <li><a href="#contact" data-icon="phone" data-transition="flip">Contact</a></li>
+    </ul>
+  </div>
+
+<!-- main Content goes here -->
+<div data-role="main" class="ui-content">
+<h2> Page Content Goes here </h2>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h1> &copy 2017 All Rights Reserved </h1>
+    </div>
+    </div>
+<!-- End Home Page -->
+
+<!-- Contact Page Container -->
+
+    <div data-role="page" data-theme="b" id="contact">     
+    <div data-role="header">
+        <h1> Header Content </h1>
+    </div>
+     <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+      <li><a href="#contact" data-icon="phone" data-transition="flip">Contact</a></li>
+    </ul>
+  </div>
+
+<!-- main Content goes here -->
+
+<div data-role="main" class="ui-content">
+<h2> Contact Page Content Goes here </h2>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h1> &copy 2017 All Rights Reserved </h1>
+    </div>
+    </div>
+    
+<!-- End Contact Page -->
 
     <!-- Javascript Section -->
-    <Scripts src="\Scripts\lib\jquery\dist\jquery.min.js"></Scripts>
-    <Scripts src="\Scripts\lib\jquery-mobile-bower\js\jquery.mobile-1.4.5.min.js"></Scripts>
+    <script src="\Scripts\lib\jquery\dist\jquery.min.js"></script>
+    <script src="\Scripts\lib\jquery-mobile-bower\js\jquery.mobile-1.4.5.min.js"></script>
 </body>
 </html>
